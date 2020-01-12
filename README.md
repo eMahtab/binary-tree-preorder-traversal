@@ -32,7 +32,7 @@ import java.util.List;
 
 public class App {
 
-	public static void main(String[] args) {
+     public static void main(String[] args) {
 		TreeNode root = new TreeNode(70);
 		root.left = new TreeNode(67); root.right = new TreeNode(43);
 		
@@ -48,25 +48,25 @@ public class App {
 		
 		root.right.right.left = new TreeNode(60); root.right.right.right = new TreeNode(65);
 		System.out.println(inorderTraversal(root));
-	}
+     }
 	
 	
-	// Definition for a binary tree node.
-	static public class TreeNode {
+     // Definition for a binary tree node.
+     static public class TreeNode {
 	      int val;
 	      TreeNode left;
 	      TreeNode right;
 	      TreeNode(int x) { val = x; }
-	}
+     }
 	 
 	
-	public static List <Integer> inorderTraversal(TreeNode root) {
+     public static List <Integer> inorderTraversal(TreeNode root) {
         List <Integer> res = new ArrayList<Integer>();
         helper(root, res);
         return res;
-    }
+     }
 
-  public static void helper(TreeNode root, List <Integer> res) {
+     public static void helper(TreeNode root, List <Integer> res) {
         if (root != null) {
         	res.add(root.val);
             if (root.left != null) {
@@ -77,7 +77,7 @@ public class App {
                 helper(root.right, res);
             }
         }
-   }
+     }
 }
 
 ```
