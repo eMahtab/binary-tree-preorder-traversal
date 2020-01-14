@@ -68,14 +68,9 @@ public class App {
 
      public static void helper(TreeNode root, List <Integer> res) {
         if (root != null) {
-        	res.add(root.val);
-            if (root.left != null) {
-                helper(root.left, res);
-            }
-            
-            if (root.right != null) {
-                helper(root.right, res);
-            }
+             res.add(root.val);
+             helper(root.left, res);
+             helper(root.right, res);
         }
      }
 }
