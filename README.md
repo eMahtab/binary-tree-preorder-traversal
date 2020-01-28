@@ -24,7 +24,7 @@ Note that node 75 doesn't have left child and node 29 doesn't have right child.
 The preorder traversal for above binary tree will be **[70, 67, 35, 21, 20, 75, 30, 43, 29, 50, 24, 60, 65]**
 
 
-## Implementation :
+## Implementation : Recursive
 
 ```java
 import java.util.ArrayList;
@@ -76,6 +76,7 @@ public class App {
 }
 
 ```
+## Implementation : Iterative
 
 ```java
 public List<Integer> preorderTraversal(TreeNode root) {
@@ -101,3 +102,6 @@ public List<Integer> preorderTraversal(TreeNode root) {
     return res;
 }
 ```
+
+# References :
+https://algorithmsandme.com/iterative-preorder-traversal
